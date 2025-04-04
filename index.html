@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title>My Portfolio</title>
+<style>
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    background-image: url('https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover; /* This makes the image cover the entire background */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-position: center; /* This centers the image */
+    
+}
+header { background-color: #96d6f4; 
+    color: rgb(232, 237, 239); 
+    padding: 10px 0; 
+    text-align: center; 
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.about, .education, .interests, .projects, .contact {
+    margin-bottom: 30px;
+    color: #131313;
+}
+.projects ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.projects li {
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+.cv-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cv-download:hover {
+    background-color: #45a049;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: #555;
+}
+</style>
+<body>
+    <header>
+        <h1>Portfolio for Nomthandazo Motau</h1>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am deeply passionate about leveraging my expertise in administration, client services, and accounts to create innovative web solutions.
+            My interests lie in optimizing processes, enhancing user experience, and solving real-world challenges through technology. With a 
+            strong analytical mindset honed through system administration, data management, and risk assessment, I am eager to explore the 
+            dynamic field of web development, combining my technical aptitude with my drive for impactful problem-solving.
+        </p>
+    </section>
+
+    <section class="education">
+        <h2>Educational Background</h2>
+        <p> I hold a National Diploma from UNISA in IT, complemented by certifications such as Short Term Insurance NQF Level 4 (Inseta) and the Regulatory Examination RE5 (Moonstone). My qualifications also include 
+            an International Driver's Certificate (UNISA) and a Life Skills Programme from CIDA City Campus, showcasing adaptability and personal growth. 
+            I completed my secondary education with Matric at Eastdene Combined School, reflecting a well-rounded and progressive academic journey.
+        </p>
+
+        <p><br><strong>
+            You can view and download my CV by clicking the link below:
+        </p></br></strong>
+        <a href="C:\Users\admin\OneDrive\Desktop\Hackathon Portfolio\Resume.pdf" class="cv-download" target="_blank">Download My CV</a>
+    </section>
+
+    <section class="interests">
+        <h2>Interests</h2>
+        <p>
+            I enjoy reading, whether it's a good novel or an insightful article that broadens my knowledge. The rapid advancements in technology, particularly in areas like artificial intelligence.Alongside 
+            that, I constantly seek to learn new programs and software, always curious about how technology can simplify tasks or open up new possibilities.
+            This mix of outdoor adventure, intellectual growth, and tech exploration keeps me balanced and energized.
+        </p>
+    </section>
+
+    <section class="projects">
+        <h2>Languages</h2>
+        <ul>
+    
+            <li>CSS</li>
+            <li>Python</li>
+            <li>Javascript</li>
+           
+        </ul>
+    </section>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to collaborate or just want to reach out, feel free to fill out the form below:</p>
+        <form id="contactForm" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="button" id="sendButton">Send Message</button>
+            <p id="responseMessage" style="display: none;">Thank you for reaching out! I'll get back to you soon.</p>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById("sendButton").addEventListener("click", function() {
+            var form = document.getElementById("contactForm");
+    
+            // Check if all required fields are filled
+            var name = form.querySelector('input[name="name"]').value;
+            var email = form.querySelector('input[name="email"]').value;
+            var message = form.querySelector('textarea[name="message"]').value;
+    
+            if (name && email && message) {
+                // Display the response message
+                document.getElementById("responseMessage").style.display = "block";
+    
+                // Optionally reset the form fields
+                form.reset();
+            } else {
+                // Optionally, display an alert or error message if fields are missing
+                alert("Please fill in all fields before submitting.");
+            }
+        });
+    </script>
+
+    <footer>
+        <p>&copy; Created by Nomthandazo Motau. All rights reserved.</p>
+    </footer>
+</body>
+</html>
