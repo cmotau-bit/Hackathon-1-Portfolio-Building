@@ -1,1 +1,3 @@
 # Hackathon-1-Portfolio-Building
+Welcome to Nomthandazo Motau's Portfolio! This project showcases a comprehensive, user-friendly web portfolio designed to highlight Nomthandazo's skills, educational background, professional expertise, and interests. 
+It combines clean design principles with intuitive functionality, offering a dynamic and visually appealing experience for visitors. Built with HTML, CSS, and JavaScript, this portfolio provides insights into Nomthandazo's journey in administration, client services, and web development, while also demonstrating a strong focus on problem-solving, technical aptitude, and creativity. Explore the portfolio and connect through the interactive contact form!
